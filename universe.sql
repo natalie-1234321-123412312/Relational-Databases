@@ -126,7 +126,9 @@ CREATE TABLE public.planet (
     name character varying(50) NOT NULL,
     star_id integer,
     planet_type_id integer,
-    has_life boolean
+    has_life boolean,
+    number_planets_close integer,
+    number_satelites integer
 );
 
 
@@ -303,20 +305,20 @@ INSERT INTO public.moon VALUES (20, 'moonT', 3, true, NULL);
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.planet VALUES (1, 'PlanetA', 1, 2, false);
-INSERT INTO public.planet VALUES (2, 'PlanetB', 1, 2, false);
-INSERT INTO public.planet VALUES (3, 'PlanetC', 1, 2, false);
-INSERT INTO public.planet VALUES (4, 'PlanetD', 4, 2, false);
-INSERT INTO public.planet VALUES (5, 'PlanetE', 1, 2, false);
-INSERT INTO public.planet VALUES (6, 'PlanetF', 1, 2, false);
-INSERT INTO public.planet VALUES (7, 'PlanetG', 1, 2, false);
-INSERT INTO public.planet VALUES (8, 'PlanetH', 1, 2, false);
-INSERT INTO public.planet VALUES (9, 'PlanetI', 3, 2, false);
-INSERT INTO public.planet VALUES (10, 'PlanetJ', 1, 3, false);
-INSERT INTO public.planet VALUES (11, 'PlanetK', 5, 3, false);
-INSERT INTO public.planet VALUES (12, 'PlanetL', 1, 1, true);
-INSERT INTO public.planet VALUES (13, 'PlanetM', 1, 2, false);
-INSERT INTO public.planet VALUES (14, 'PlanetN', 3, 1, true);
+INSERT INTO public.planet VALUES (1, 'PlanetA', 1, 2, false, NULL, NULL);
+INSERT INTO public.planet VALUES (2, 'PlanetB', 1, 2, false, NULL, NULL);
+INSERT INTO public.planet VALUES (3, 'PlanetC', 1, 2, false, NULL, NULL);
+INSERT INTO public.planet VALUES (4, 'PlanetD', 4, 2, false, NULL, NULL);
+INSERT INTO public.planet VALUES (5, 'PlanetE', 1, 2, false, NULL, NULL);
+INSERT INTO public.planet VALUES (6, 'PlanetF', 1, 2, false, NULL, NULL);
+INSERT INTO public.planet VALUES (7, 'PlanetG', 1, 2, false, NULL, NULL);
+INSERT INTO public.planet VALUES (8, 'PlanetH', 1, 2, false, NULL, NULL);
+INSERT INTO public.planet VALUES (9, 'PlanetI', 3, 2, false, NULL, NULL);
+INSERT INTO public.planet VALUES (10, 'PlanetJ', 1, 3, false, NULL, NULL);
+INSERT INTO public.planet VALUES (11, 'PlanetK', 5, 3, false, NULL, NULL);
+INSERT INTO public.planet VALUES (12, 'PlanetL', 1, 1, true, NULL, NULL);
+INSERT INTO public.planet VALUES (13, 'PlanetM', 1, 2, false, NULL, NULL);
+INSERT INTO public.planet VALUES (14, 'PlanetN', 3, 1, true, NULL, NULL);
 
 
 --
